@@ -11,6 +11,7 @@ lint: venv
 
 clean:
 	rm -rf venv/
+	rm -rf python/{build,dist,*.egg-info}
 
 dist: venv
 	rm -r python/dist
