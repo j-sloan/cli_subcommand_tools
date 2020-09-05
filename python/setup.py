@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 setup(
     name="cli_subcommand_tools",
-    version="0.0.3",
+    version="0.1.0",
     author="jonny sloan",
     url="https://github.com/j-sloan/cli_subcommand_tools",
     description="A small set of utilities for making subcommand-based CLI interfaces",
