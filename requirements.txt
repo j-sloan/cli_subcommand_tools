@@ -1,0 +1,8 @@
+# development environment requirements
+setuptools
+pip
+wheel
+black
+pytest
+flake8
+twine
