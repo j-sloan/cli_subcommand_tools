@@ -33,7 +33,7 @@ def make_tool_parsers(parser: ArgumentParser, tools: Dict[str, AsyncTool]):
 
 def run_tool(tool: AsyncTool, options: Namespace):
     func = tool.make_tool()
-    kwargs = {arg: getattr(options, arg) for arg in inspect.getfullargspec(tool).kwonlyargs}
+    kwargs = {arg: getattr(options, arg) for arg in inspect.getfullargspec(func).kwonlyargs}
     loop = asyncio.get_event_loop()
     loop.run_until_complete(func(**kwargs))
 
